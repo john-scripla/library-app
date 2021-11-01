@@ -1,0 +1,377 @@
+body {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: auto;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+#root {
+  width:100%;
+ 
+}
+
+
+.form-inner img {
+  position: static;
+  padding-left: 110px;
+  padding-bottom: 30px;
+}
+
+form {
+  display: block;
+  position: relative;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+   background-size: cover;
+   padding: 60px;
+
+}
+
+form:after {
+
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: 1;
+
+}
+
+form .form-inner {
+
+  position: relative;
+  display: block;
+  background-color: #FFF;
+  padding: 50px;
+  z-index: 2;
+  border: 1px solid black;
+
+}
+
+
+form .form-inner .form-group {
+  display: block;
+  width: 300px;
+  margin: 30px;
+
+}
+
+form .form-inner .form-group label,
+option,
+select {
+  display: block;
+  color: black;
+  font-size: 12px;
+  margin-bottom: 5px;
+  transition: 0.4s;
+}
+
+.form-inner .form-group:focus-within label {
+  color: #FE4880;
+}
+
+.form-inner .form-group input,
+select {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #f8F8F8;
+  border-radius: 8px;
+  transition: 0.4s;
+}
+
+.form-inner .form-group input:focus {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.form-inner,
+button,
+input[type="submit"],
+.welcome button {
+  display: block;
+  margin: 0 auto;
+  padding: 8px;
+  border: .5px solid #2E8BC0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-size: 200%;
+  transition: 0.4s;
+
+}
+
+
+.form-inner,
+button,
+input[type='submit']:hover,
+.welcome button {
+  background-position: 100% 0%;
+}
+
+.welcome {
+  width: 100%;
+  max-width: 480px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.welcome h2 {
+  color: #888;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.welcome h2 span {
+  color: #FE4880;
+  font-weight: 700;
+}
+
+
+
+
+
+/*Categories CSS */
+
+.categories {
+
+
+  text-align: auto;
+  background: E0FFFF;
+  color: white;
+
+
+
+}
+
+/* courses CSS */
+
+.courses {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 40px;
+  padding-bottom: 130px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*Footer CSS */
+
+.footer {
+
+  height: 130px;
+  text-align: center;
+  background-color:lightgray;
+}
+
+
+
+h1 {
+  font-size: 2.0em;
+  padding: 10px 0;
+  font-weight: 400;
+}
+
+p {
+  font-size: .8 em;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+
+.header {
+  width: 100%;
+  padding: 60px 0;
+  padding-left: 60px;
+  text-align: left;
+  background: black;
+  color: white;
+}
+
+.btn {
+
+  font-size: 14px;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 300;
+  margin-top: 30px;
+  color: black;
+
+}
+
+
+
+
+/* CSS for the login form */
+
+
+/*  card CSS */
+
+
+* {
+  @include box-sizing(border-box);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  @include linear-gradient(-45deg, #19d3d1 5%, #57abf2, $fallback: #57abf2);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+
+.recipe-card {
+
+
+  background: #fff;
+  margin: 4em auto;
+  width: 90%;
+  max-width: 250px;
+
+
+}
+
+button {
+  background: #57abf2;
+
+  top: 80%;
+  right: 3%;
+  width: em(65);
+  height: em(65);
+  border-radius: em(65);
+  line-height: em(65);
+  text-align: center;
+
+}
+
+
+
+.card-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+h2,
+h3 {
+  margin: 0;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: em(28);
+  color: #222222;
+}
+
+h3 {
+  font-size: em(15);
+  color: #838689;
+
+}
+
+.categories label,
+option,
+select {
+  color: black;
+  width: 90px;
+  font-size: 12px;
+  margin-bottom: 5px;
+  transition: 0.4s;
+}
+
+.categories select {
+
+  background-color: lightsteelblue;
+  position: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: montserrat, sans-serif;
+}
+
+input,
+button {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px
+}
+
+
+
+
+.box_container {
+
+  padding: 30 px;
+
+}
+
+
+.one {
+
+  width: 270px;
+  height: 270px;
+  margin: 50px;
+  padding: 50px;
+  background-color: white;
+}
+
+.modal {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  height: 200px;
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  width: 30rem;
+  z-index: 10;
+  position: fixed;
+  top: 20vh;
+  left: calc(50% - 15rem);
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(218, 184, 184, 0.75);
+  
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
